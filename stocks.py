@@ -42,12 +42,6 @@ def on_message(ws, message):
                     if stockitem is not None and stockitem['s'] is not None: 
                         print(stockitem['p'])
                         uuid_key = '{0}_{1}'.format(strftime("%Y%m%d%H%M%S",gmtime()),uuid.uuid4())
-                        #row['symbol'] = stockitem['s']
-                        #row['ts'] = float(stockitem['t'])
-                        #row['currentts'] = float(strftime("%Y%m%d%H%M%S",gmtime()))
-                        #row['volume'] = float(stockitem['v'])
-                        #row['price'] = float(stockitem['p'])
-                        #row['tradeconditions'] = ','.join(stockitem['c'])
                         if ( stockitem['s'] != '' ):
                             producer.send("finnhubstocks", key=uuid_key, value= {'uuid': uuid_key, 'symbol': stockitem['s'], 'ts': float(stockitem['t']), 'currentts': float(strftime("%Y%m%d%H%M%S",gmtime())), 'volume': float(stockitem['v']),'price': float(stockitem['p']), 'tradeconditions': ','.join(stockitem['c'])  }  )
                             producer.flush()
@@ -140,7 +134,7 @@ if __name__ == "__main__":
     #websocket.enableTrace(True)
 
     websocket.enableTrace(False)
-    ws = websocket.WebSocketApp("wss://ws.finnhub.io?token=bumnshf48v6scplu40a0",
+    ws = websocket.WebSocketApp("".join([ "wss://ws.finnhub.io?token=", os.environ.get('FINN_KEY')]),
                               on_message = on_message,
                               on_error = on_error,
                               on_close = on_close)
