@@ -6,7 +6,7 @@ finnhub stocks
 
 Python application receives websocket stream of JSON arrays and sends individual JSON messages with a JSON schema.
 
-![image](https://raw.githubusercontent.com/tspannhw/FLiPN-Py-Stocks/main/finnhubpystocks.png)
+![image](https://raw.githubusercontent.com/tspannhw/FLaNK-Py-Stocks/main/finnhubkafkacloduera.png)
 
 
 ### Raw Data
