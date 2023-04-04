@@ -41,36 +41,6 @@ c
 List of trade conditions. A comprehensive list of trade conditions code can be found here
 ````
 
-### Consume Pulsar Data
-
-````
-
-bin/pulsar-client consume "persistent://public/default/stocks" -s stocks-reader -n 0
-
-
------ got message -----
-key:[20221230191756_42a4752d-5f66-4245-8153-a5ec8478f738], properties:[], content:{
- "symbol": "AAPL",
- "ts": 1672427874976.0,
- "currentts": 20221230191756.0,
- "volume": 10.0,
- "price": 128.055,
- "tradeconditions": "1 12",
- "uuid": "20221230191756_42a4752d-5f66-4245-8153-a5ec8478f738"
-}
------ got message -----
-key:[20221230191756_a560a594-7c12-42e7-a76d-6650a48533e0], properties:[], content:{
- "symbol": "TSLA",
- "ts": 1672427874974.0,
- "currentts": 20221230191756.0,
- "volume": 100.0,
- "price": 120.94,
- "tradeconditions": "",
- "uuid": "20221230191756_a560a594-7c12-42e7-a76d-6650a48533e0"
-}
-
-````
-
 
 ### References
 
