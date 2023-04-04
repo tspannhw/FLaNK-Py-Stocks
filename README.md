@@ -1,4 +1,4 @@
-# FLiPN-Py-Stocks
+# FLaNK-Py-Stocks
 
 finnhub stocks
 
