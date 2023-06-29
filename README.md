@@ -41,6 +41,17 @@ c
 List of trade conditions. A comprehensive list of trade conditions code can be found here
 ````
 
+### Connect to pandas
+
+https://jrott.com/posts/kafka-to-pandas/
+
+https://docs.kanaries.net/pygwalker/use-pygwalker-with-streamlit.en
+
+https://towardsdatascience.com/how-to-read-kafka-clickstream-event-data-in-pandas-96f50e88f7eb
+
+
+
+
 
 ### References
 
