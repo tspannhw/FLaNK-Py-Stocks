@@ -50,7 +50,24 @@ https://docs.kanaries.net/pygwalker/use-pygwalker-with-streamlit.en
 https://towardsdatascience.com/how-to-read-kafka-clickstream-event-data-in-pandas-96f50e88f7eb
 
 
+#### flink sql
 
+````
+
+select symbol,  max(CAST(`high` as float)) as maxhigh,
+       min(CAST(`high` as float)) as minhigh,
+       avg(CAST(`high` as float)) as avghigh,
+       max(CAST(`low` as float)) as maxlow,
+       min(CAST(`low` as float)) as minlow,
+       avg(CAST(`low` as float)) as avglow,
+       max(CAST(`close` as float)) as maxclose,
+       min(CAST(`close` as float)) as minclose,
+       avg(CAST(`close` as float)) as avgclose,
+       count(CAST(`high` as float)) as RowCount
+from stock2
+group by symbol
+
+````
 
 
 ### References
