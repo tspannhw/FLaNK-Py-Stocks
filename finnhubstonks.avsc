@@ -1,0 +1,41 @@
+{
+  "type": "record",
+  "name": "inferredSchema",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": "string",
+      "doc": "Type inferred from '\"20231214145344_dfa767c3-e39e-405d-915d-1af3cce4f03d\"'"
+    },
+    {
+      "name": "symbol",
+      "type": "string",
+      "doc": "Type inferred from '\"TSLA\"'"
+    },
+    {
+      "name": "ts",
+      "type": "double",
+      "doc": "Type inferred from '1.702565623038E12'"
+    },
+    {
+      "name": "currentts",
+      "type": "double",
+      "doc": "Type inferred from '2.0231214145344E13'"
+    },
+    {
+      "name": "volume",
+      "type": "double",
+      "doc": "Type inferred from '8.0'"
+    },
+    {
+      "name": "price",
+      "type": "double",
+      "doc": "Type inferred from '245.518'"
+    },
+    {
+      "name": "tradeconditions",
+      "type": "string",
+      "doc": "Type inferred from '\"1,12\"'"
+    }
+  ]
+}
